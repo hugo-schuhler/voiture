@@ -34,9 +34,9 @@ get_header();
                 
                 <p>Dimension: <?php echo get_post_meta( $post->ID, 'dimension', true ); ?>m (formart: L*l*h) </p>
                 <p>Année: <?php echo get_post_meta( $post->ID, 'annee', true ); ?></p>
+				<p>Cylindrée: <?php echo get_post_meta( $post->ID, 'cylindree', true ); ?></p>
                 <?php the_terms( $post->ID, 'marque', 'Marque : ' ); ?><br>
                 <?php the_terms( $post->ID, 'couleur', 'Couleur : ' ); ?><br>
-                <?php the_terms( $post->ID, 'cylindree', 'Cylindrée : ' ); ?><br>
                 <?php
 			endwhile;
 
